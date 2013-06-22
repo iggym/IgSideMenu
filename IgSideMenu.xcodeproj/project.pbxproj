@@ -34,6 +34,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		DCA35FA917761C56009FBC64 /* DESIGN */ = {isa = PBXFileReference; lastKnownFileType = text; path = DESIGN; sourceTree = "<group>"; };
 		DCA5D14B1775F625000B6092 /* IgSideMenu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IgSideMenu.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DCA5D14E1775F625000B6092 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		DCA5D1501775F625000B6092 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -80,9 +81,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		DCA35FA817761C38009FBC64 /* Docs */ = {
+			isa = PBXGroup;
+			children = (
+				DCA35FA917761C56009FBC64 /* DESIGN */,
+			);
+			path = Docs;
+			sourceTree = "<group>";
+		};
 		DCA5D1421775F625000B6092 = {
 			isa = PBXGroup;
 			children = (
+				DCA35FA817761C38009FBC64 /* Docs */,
 				DCA5D1831775F88C000B6092 /* README.md */,
 				DCA5D1541775F625000B6092 /* IgSideMenu */,
 				DCA5D1731775F625000B6092 /* IgSideMenuTests */,
@@ -457,6 +467,7 @@
 				DCA5D17F1775F625000B6092 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		DCA5D1801775F625000B6092 /* Build configuration list for PBXNativeTarget "IgSideMenuTests" */ = {
 			isa = XCConfigurationList;
@@ -465,6 +476,7 @@
 				DCA5D1821775F625000B6092 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
