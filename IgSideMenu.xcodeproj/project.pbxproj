@@ -53,6 +53,7 @@
 		DCA5D1751775F625000B6092 /* IgSideMenuTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "IgSideMenuTests-Info.plist"; sourceTree = "<group>"; };
 		DCA5D1771775F625000B6092 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		DCA5D1791775F625000B6092 /* IgSideMenuTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IgSideMenuTests.m; sourceTree = "<group>"; };
+		DCA5D1831775F88C000B6092 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +83,7 @@
 		DCA5D1421775F625000B6092 = {
 			isa = PBXGroup;
 			children = (
+				DCA5D1831775F88C000B6092 /* README.md */,
 				DCA5D1541775F625000B6092 /* IgSideMenu */,
 				DCA5D1731775F625000B6092 /* IgSideMenuTests */,
 				DCA5D14D1775F625000B6092 /* Frameworks */,
