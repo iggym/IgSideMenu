@@ -1,0 +1,15 @@
+================================================================================
+Design docs for IgSideMenu
+================================================================================
+
+
+
+--------------------------------------------------------------------------------
+Project Folder Structure
+--------------------------------------------------------------------------------
+     /Application      # App delegate and related files
+        /Controllers      # Base view controllers
+        /Models           # Models, Core Data schema etc
+        /Views            # Shared views
+        /Library          # Anything that falls outside of the MVC pattern
+        /Helpers          # Categories and helpers

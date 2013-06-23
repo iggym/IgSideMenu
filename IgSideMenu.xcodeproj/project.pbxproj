@@ -81,6 +81,41 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		DCA304C31777579B007D0B6B /* Application */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		DCA304C41777579B007D0B6B /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		DCA304C51777579B007D0B6B /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		DCA304C61777579B007D0B6B /* Library */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Library;
+			sourceTree = "<group>";
+		};
+		DCA304C71777579B007D0B6B /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		DCA35FA817761C38009FBC64 /* Docs */ = {
 			isa = PBXGroup;
 			children = (
@@ -124,6 +159,11 @@
 		DCA5D1541775F625000B6092 /* IgSideMenu */ = {
 			isa = PBXGroup;
 			children = (
+				DCA304C31777579B007D0B6B /* Application */,
+				DCA304C41777579B007D0B6B /* Controllers */,
+				DCA304C51777579B007D0B6B /* Helpers */,
+				DCA304C61777579B007D0B6B /* Library */,
+				DCA304C71777579B007D0B6B /* Models */,
 				DCA5D15D1775F625000B6092 /* IGGAppDelegate.h */,
 				DCA5D15E1775F625000B6092 /* IGGAppDelegate.m */,
 				DCA5D1601775F625000B6092 /* Main.storyboard */,
