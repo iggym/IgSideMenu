@@ -7,12 +7,23 @@
 //
 
 #import "IGGAppDelegate.h"
+#import "IGGSideMenuContainerViewController.h"
 
 @implementation IGGAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    // Override point for customization after application launch.
+    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:[NSBundle mainBundle]];
+    IGGSideMenuContainerViewController *container = (IGGSideMenuContainerViewController *)self.window.rootViewController;
+    
+    UINavigationController *navigationController = [storyboard instantiateViewControllerWithIdentifier:@"navigationController"];
+    UIViewController *leftSideMenuViewController = [storyboard instantiateViewControllerWithIdentifier:@"leftSideMenuViewController"];
+    UIViewController *rightSideMenuViewController = [storyboard instantiateViewControllerWithIdentifier:@"rightSideMenuViewController"];
+    
+    [container setLeftMenuViewController:leftSideMenuViewController];
+    [container setRightMenuViewController:rightSideMenuViewController];
+    [container setCenterViewController:navigationController];
+    
     return YES;
 }
 							

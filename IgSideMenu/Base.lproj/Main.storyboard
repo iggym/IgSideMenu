@@ -1,23 +1,119 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4451" systemVersion="13A461" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4457.6" systemVersion="12E55" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="vXZ-lx-hvc">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3676"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3682.6"/>
     </dependencies>
     <scenes>
-        <!--class Prefix:identifier View Controller-->
+        <!--Side Menu Container View Controller-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
-                <viewController id="vXZ-lx-hvc" customClass="IGGViewController" sceneMemberID="viewController">
+                <viewController id="vXZ-lx-hvc" customClass="IGGSideMenuContainerViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
+                    <extendedEdge key="edgesForExtendedLayout"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="-541" y="-518"/>
+        </scene>
+        <!--Side Menu Left View Controller-->
+        <scene sceneID="EEE-S7-bIq">
+            <objects>
+                <viewController storyboardIdentifier="leftSideMenuViewController" id="8cE-2u-uot" customClass="IGGSideMenuLeftViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Mvc-ej-uq8">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <extendedEdge key="edgesForExtendedLayout"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CXv-X7-FnP" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-541" y="-1205"/>
+        </scene>
+        <!--Side Menu Right View Controller-->
+        <scene sceneID="BLF-1a-RVP">
+            <objects>
+                <viewController storyboardIdentifier="rightSideMenuViewController" id="xaQ-Gc-a30" customClass="IGGSideMenuRightViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="fIc-XC-ifT">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <extendedEdge key="edgesForExtendedLayout"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vOe-4r-VI3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-548" y="184"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="yWN-vU-bS3">
+            <objects>
+                <navigationController storyboardIdentifier="navigationController" definesPresentationContext="YES" id="6ni-ej-sbC" sceneMemberID="viewController">
+                    <extendedEdge key="edgesForExtendedLayout"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="j5e-Bf-Flw">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="deh-wA-pA3" kind="relationship" relationship="rootViewController" id="yAj-ke-lfT"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6km-W2-KW9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-32" y="-428"/>
+        </scene>
+        <!--Home Screen View Controller-->
+        <scene sceneID="gHP-bS-zb2">
+            <objects>
+                <viewController storyboardIdentifier="homeViewController" id="deh-wA-pA3" customClass="IGGHomeScreenViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="JrH-vK-1im">
+                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <extendedEdge key="edgesForExtendedLayout"/>
+                    <navigationItem key="navigationItem" id="I8x-Hm-Sv4">
+                        <barButtonItem key="leftBarButtonItem" image="menu-icon.png" id="Zpq-gJ-bm1">
+                            <connections>
+                                <action selector="showLeftMenuPressed:" destination="deh-wA-pA3" id="1bF-Af-y1M"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" image="menu-icon.png" id="eM8-AU-eTH">
+                            <connections>
+                                <action selector="showRightMenuPressed:" destination="deh-wA-pA3" id="nOW-ue-XgN"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jb8-M0-CNv" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="481" y="-436"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="menu-icon.png" width="22" height="17"/>
+    </resources>
+    <classes>
+        <class className="IGGHomeScreenViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/IGGHomeScreenViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="showLeftMenuPressed:"/>
+                <relationship kind="action" name="showRightMenuPressed:"/>
+            </relationships>
+        </class>
+        <class className="IGGSideMenuContainerViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/IGGSideMenuContainerViewController.h"/>
+        </class>
+        <class className="IGGSideMenuLeftViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/IGGSideMenuLeftViewController.h"/>
+        </class>
+        <class className="IGGSideMenuRightViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/IGGSideMenuRightViewController.h"/>
+        </class>
+    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>

@@ -32,7 +32,8 @@ typedef enum {
 
 
 
-@interface IGGSideMenuContainerViewController : UIViewController
+@interface IGGSideMenuContainerViewController : UIViewController<UIGestureRecognizerDelegate>
+
 + (IGGSideMenuContainerViewController *)containerWithCenterViewController:(id)centerViewController
                                                   leftMenuViewController:(id)leftMenuViewController
                                                  rightMenuViewController:(id)rightMenuViewController;
