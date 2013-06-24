@@ -34,6 +34,16 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		DC9FEC6A1777F8CC00557E21 /* README */ = {isa = PBXFileReference; lastKnownFileType = text; path = README; sourceTree = "<group>"; };
+		DC9FEC6C1777FD3E00557E21 /* IGGSideMenuContainerViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = IGGSideMenuContainerViewController.h; path = IgSideMenu/Library/SideMenu/IGGSideMenuContainerViewController.h; sourceTree = SOURCE_ROOT; };
+		DC9FEC6D1777FD3E00557E21 /* IGGSideMenuContainerViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = IGGSideMenuContainerViewController.m; path = IgSideMenu/Library/SideMenu/IGGSideMenuContainerViewController.m; sourceTree = SOURCE_ROOT; };
+		DC9FEC6F1777FFAA00557E21 /* back-arrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "back-arrow.png"; sourceTree = "<group>"; };
+		DC9FEC701777FFAA00557E21 /* back-arrow@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "back-arrow@2x.png"; sourceTree = "<group>"; };
+		DC9FEC711777FFAA00557E21 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		DC9FEC721777FFAA00557E21 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		DC9FEC731777FFAA00557E21 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		DC9FEC741777FFAA00557E21 /* menu-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "menu-icon.png"; sourceTree = "<group>"; };
+		DC9FEC751777FFAA00557E21 /* menu-icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "menu-icon@2x.png"; sourceTree = "<group>"; };
 		DCA35FA917761C56009FBC64 /* DESIGN */ = {isa = PBXFileReference; lastKnownFileType = text; path = DESIGN; sourceTree = "<group>"; };
 		DCA5D14B1775F625000B6092 /* IgSideMenu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IgSideMenu.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DCA5D14E1775F625000B6092 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -43,8 +53,8 @@
 		DCA5D1581775F625000B6092 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		DCA5D15A1775F625000B6092 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		DCA5D15C1775F625000B6092 /* IgSideMenu-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "IgSideMenu-Prefix.pch"; sourceTree = "<group>"; };
-		DCA5D15D1775F625000B6092 /* IGGAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IGGAppDelegate.h; sourceTree = "<group>"; };
-		DCA5D15E1775F625000B6092 /* IGGAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IGGAppDelegate.m; sourceTree = "<group>"; };
+		DCA5D15D1775F625000B6092 /* IGGAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = IGGAppDelegate.h; path = ../IGGAppDelegate.h; sourceTree = "<group>"; };
+		DCA5D15E1775F625000B6092 /* IGGAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = IGGAppDelegate.m; path = ../IGGAppDelegate.m; sourceTree = "<group>"; };
 		DCA5D1611775F625000B6092 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DCA5D1631775F625000B6092 /* IGGViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IGGViewController.h; sourceTree = "<group>"; };
 		DCA5D1641775F625000B6092 /* IGGViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IGGViewController.m; sourceTree = "<group>"; };
@@ -81,9 +91,35 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		DC9FEC6B1777FC5B00557E21 /* SideMenu */ = {
+			isa = PBXGroup;
+			children = (
+				DC9FEC6E1777FFAA00557E21 /* Images */,
+				DC9FEC6C1777FD3E00557E21 /* IGGSideMenuContainerViewController.h */,
+				DC9FEC6D1777FD3E00557E21 /* IGGSideMenuContainerViewController.m */,
+			);
+			path = SideMenu;
+			sourceTree = "<group>";
+		};
+		DC9FEC6E1777FFAA00557E21 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				DC9FEC6F1777FFAA00557E21 /* back-arrow.png */,
+				DC9FEC701777FFAA00557E21 /* back-arrow@2x.png */,
+				DC9FEC711777FFAA00557E21 /* Default-568h@2x.png */,
+				DC9FEC721777FFAA00557E21 /* Default.png */,
+				DC9FEC731777FFAA00557E21 /* Default@2x.png */,
+				DC9FEC741777FFAA00557E21 /* menu-icon.png */,
+				DC9FEC751777FFAA00557E21 /* menu-icon@2x.png */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
 		DCA304C31777579B007D0B6B /* Application */ = {
 			isa = PBXGroup;
 			children = (
+				DCA5D15D1775F625000B6092 /* IGGAppDelegate.h */,
+				DCA5D15E1775F625000B6092 /* IGGAppDelegate.m */,
 			);
 			path = Application;
 			sourceTree = "<group>";
@@ -91,6 +127,7 @@
 		DCA304C41777579B007D0B6B /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				DC9FEC6A1777F8CC00557E21 /* README */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -105,6 +142,7 @@
 		DCA304C61777579B007D0B6B /* Library */ = {
 			isa = PBXGroup;
 			children = (
+				DC9FEC6B1777FC5B00557E21 /* SideMenu */,
 			);
 			path = Library;
 			sourceTree = "<group>";
@@ -164,8 +202,6 @@
 				DCA304C51777579B007D0B6B /* Helpers */,
 				DCA304C61777579B007D0B6B /* Library */,
 				DCA304C71777579B007D0B6B /* Models */,
-				DCA5D15D1775F625000B6092 /* IGGAppDelegate.h */,
-				DCA5D15E1775F625000B6092 /* IGGAppDelegate.m */,
 				DCA5D1601775F625000B6092 /* Main.storyboard */,
 				DCA5D1631775F625000B6092 /* IGGViewController.h */,
 				DCA5D1641775F625000B6092 /* IGGViewController.m */,
